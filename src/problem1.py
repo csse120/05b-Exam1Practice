@@ -281,6 +281,8 @@ def run_test_problem1c():
     actual = problem1c(10008)
     print_actual_result_of_test(expected, actual, test_results)
 
+    print_summary_of_test_results(test_results)
+
 
 def problem1c(n):
     """
