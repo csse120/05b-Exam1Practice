@@ -1,13 +1,14 @@
 """
 PRACTICE Exam 1, problem 2.
 
-Authors: David Mutchler, Vibha Alangar, Valerie Galluzzi, Mark Hays,
-         Amanda Stouder, their colleagues and PUT_YOUR_NAME_HERE.
+Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
+         Mark Hays, Amanda Stouder, Aaron Wilkin, their colleagues,
+         and PUT_YOUR_NAME_HERE.
 """  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 import rosegraphics as rg
 
-########################################################################
+###############################################################################
 # Students:
 #
 # These problems have DIFFICULTY and TIME ratings:
@@ -25,7 +26,7 @@ import rosegraphics as rg
 #    if you reach the time estimate and are NOT close to a solution,
 #    STOP working on that problem and ASK YOUR INSTRUCTOR FOR HELP
 #    on it, in class or via Piazza.
-########################################################################
+###############################################################################
 
 
 def main():
@@ -101,15 +102,15 @@ def problem2a(circle, rectangle, window):
       :type rectangle: rg.Rectangle
       :type window:    rg.RoseWindow
     """
-    # ------------------------------------------------------------------
+    # -------------------------------------------------------------------------
     # TODO: 2. Implement and test this function.
     #          Tests have been written for you (above).
-    # ------------------------------------------------------------------
-    # ------------------------------------------------------------------
+    # -------------------------------------------------------------------------
+    # -------------------------------------------------------------------------
     # DIFFICULTY AND TIME RATINGS (see top of this file for explanation)
     #    DIFFICULTY:      6
     #    TIME ESTIMATE:   10 to 15 minutes.
-    # ------------------------------------------------------------------
+    # -------------------------------------------------------------------------
 
 def run_test_problem2b():
     """ Tests the  problem2b   function. """
@@ -172,18 +173,18 @@ def problem2b(rect, n, delta, win):
       :type delta:  int
       :type win:    rg.RoseWindow
     """
-    # ------------------------------------------------------------------
+    # -------------------------------------------------------------------------
     # TODO: 3. Implement and test this function.
     #          Tests have been written for you (above).
-    # ------------------------------------------------------------------
-    # ------------------------------------------------------------------
+    # -------------------------------------------------------------------------
+    # -------------------------------------------------------------------------
     # DIFFICULTY AND TIME RATINGS (see top of this file for explanation)
     #    DIFFICULTY:      7
     #    TIME ESTIMATE:   15 to 25 minutes.
-    # ------------------------------------------------------------------
+    # -------------------------------------------------------------------------
 
 
-# ----------------------------------------------------------------------
+# -----------------------------------------------------------------------------
 # Calls  main  to start the ball rolling.
-# ----------------------------------------------------------------------
+# -----------------------------------------------------------------------------
 main()

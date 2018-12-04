@@ -1,11 +1,12 @@
 """
 PRACTICE Exam 1, problem 1.
 
-Authors: David Mutchler, Vibha Alangar, Valerie Galluzzi, Mark Hays,
-         Amanda Stouder, their colleagues and PUT_YOUR_NAME_HERE.
+Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
+         Mark Hays, Amanda Stouder, Aaron Wilkin, their colleagues,
+         and PUT_YOUR_NAME_HERE.
 """  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
-########################################################################
+###############################################################################
 # Students:
 #
 # These problems have DIFFICULTY and TIME ratings:
@@ -23,7 +24,7 @@ Authors: David Mutchler, Vibha Alangar, Valerie Galluzzi, Mark Hays,
 #    if you reach the time estimate and are NOT close to a solution,
 #    STOP working on that problem and ASK YOUR INSTRUCTOR FOR HELP
 #    on it, in class or via Piazza.
-########################################################################
+###############################################################################
 
 import testing_helper
 import time
@@ -36,7 +37,7 @@ def main():
     run_test_problem1c()
 
 
-########################################################################
+###############################################################################
 # TODO: 2.  READ the green doc-string for the:
 #   - is_prime
 #   - sum_of_digits
@@ -44,7 +45,7 @@ def main():
 # implementations, just their specification (per the doc-string).
 # You should  ** CALL **  those functions as needed in implementing the
 # other functions.  After you have READ this, change its _TODO_ to DONE.
-########################################################################
+###############################################################################
 
 def is_prime(n):
     """
@@ -64,13 +65,13 @@ def is_prime(n):
             return False
 
     return True
-    # ------------------------------------------------------------------
+    # -------------------------------------------------------------------------
     # Students:
-    #   Do NOT touch the above  is_prime  function - it has no TO DO.
+    #   Do NOT touch the above  is_prime  function - it has no _TODO_.
     #   Do NOT copy code from this function.
     #
     # Instead, ** CALL ** this function as needed in the problems below.
-    # ------------------------------------------------------------------
+    # -------------------------------------------------------------------------
 
 
 def sum_of_digits(number):
@@ -82,13 +83,13 @@ def sum_of_digits(number):
       If the integer is 83135,
       this function returns (8 + 3 + 1 + 3 + 5), which is 20.
     """
-    # ------------------------------------------------------------------
+    # -------------------------------------------------------------------------
     # Students:
-    #   Do NOT touch the above  sum_of_digits function - it has no TO DO.
+    #   Do NOT touch the above  sum_of_digits function - it has no _TODO_.
     #   Do NOT copy code from this function.
     #
     # Instead, ** CALL ** this function as needed in the problems below.
-    # ------------------------------------------------------------------
+    # -------------------------------------------------------------------------
     if number < 0:
         number = -number
 
@@ -104,16 +105,16 @@ def sum_of_digits(number):
 
 def run_test_problem1a():
     """ Tests the   problem1a   function. """
-    # ------------------------------------------------------------------
+    # -------------------------------------------------------------------------
     # TODO: 3. Implement this TEST function.
     #   It TESTS the  problem1a  function defined below.
     #   Include at least **   4   ** tests (we wrote two for you).
-    # ------------------------------------------------------------------
-    # ------------------------------------------------------------------
+    # -------------------------------------------------------------------------
+    # -------------------------------------------------------------------------
     # DIFFICULTY AND TIME RATINGS (see top of this file for explanation)
     #    DIFFICULTY:      3
     #    TIME ESTIMATE:   10 minutes.
-    # ------------------------------------------------------------------
+    # -------------------------------------------------------------------------
     print()
     print('--------------------------------------------------')
     print('Testing the   problem1a   function:')
@@ -135,7 +136,7 @@ def run_test_problem1a():
     actual = problem1a(30, 100)
     print_actual_result_of_test(expected, actual, test_results, precision=3)
 
-    # ------------------------------------------------------------------
+    # -------------------------------------------------------------------------
     # TO DO: 2 (continued).
     # Below this comment, add 2 more test cases of your own choosing.
     # You do NOT need to use the above form.  Instead, use the usual:
@@ -143,7 +144,7 @@ def run_test_problem1a():
     #   actual = problem1a(YYY, YYY)
     #   print('Test 1 expected:', expected)
     #   print('       actual:  ', actual)
-    #  ------------------------------------------------------------------
+    # -------------------------------------------------------------------------
 
 
 def problem1a(m, n):
@@ -163,20 +164,20 @@ def problem1a(m, n):
          which is about 1.135.
       -- If m is 30 and n is 100, the correct answer is about 1.278.
     """
-    # ------------------------------------------------------------------
+    # -------------------------------------------------------------------------
     # TODO: 4. Implement and test this function.
     #   Note that you should write its TEST function first (above).
-    # ------------------------------------------------------------------
-    # ------------------------------------------------------------------
+    # -------------------------------------------------------------------------
+    # -------------------------------------------------------------------------
     # DIFFICULTY AND TIME RATINGS (see top of this file for explanation)
     #    DIFFICULTY:      5
     #    TIME ESTIMATE:   10 minutes.
-    # ------------------------------------------------------------------
+    # -------------------------------------------------------------------------
 
 
 def run_test_problem1b():
     """ Tests the   problem1b   function. """
-    # ------------------------------------------------------------------
+    # -------------------------------------------------------------------------
     # TODO: 5. Implement this TEST function.
     #   It TESTS the  problem1b  function defined below.
     #   Include at least **   4   ** tests.  Use the usual form:
@@ -185,11 +186,11 @@ def run_test_problem1b():
     #   actual = problem1b(YYY, YYY)
     #   print('Test 1 expected:', expected)
     #   print('       actual:  ', actual)
-    # ------------------------------------------------------------------
+    # -------------------------------------------------------------------------
     # DIFFICULTY AND TIME RATINGS (see top of this file for explanation)
     #    DIFFICULTY:      3
     #    TIME ESTIMATE:   15 minutes.
-    # ------------------------------------------------------------------
+    # -------------------------------------------------------------------------
     print()
     print('--------------------------------------------------')
     print('Testing the   problem1b   function:')
@@ -212,20 +213,20 @@ def problem1b(m, f):
       -- If m is 5 and f is 40, the correct answer is 44,
            since there are 44 primes between 5 and 200.
      """
-    # ------------------------------------------------------------------
+    # -------------------------------------------------------------------------
     # TODO: 6. Implement and test this function.
     #   Note that you should write its TEST function first (above).
     #
-    ####################################################################
+    ###########################################################################
     # IMPORTANT:
     #    **  For full credit you must appropriately
     #    **  use (call) the   is_prime   function that is DEFINED ABOVE.
-    ####################################################################
-    # ------------------------------------------------------------------
+    ###########################################################################
+    # -------------------------------------------------------------------------
     # DIFFICULTY AND TIME RATINGS (see top of this file for explanation)
     #    DIFFICULTY:      5
     #    TIME ESTIMATE:   10 to 15 minutes.
-    # ------------------------------------------------------------------
+    # -------------------------------------------------------------------------
 
 
 def run_test_problem1c():
@@ -308,21 +309,21 @@ def problem1c(n):
            and the product of those numbers is 223092870,
            and the sum of the digits in 223092870 is 33.
     """
-    # ------------------------------------------------------------------
+    # -------------------------------------------------------------------------
     # TODO: 7. Implement and test this function.
     #          Tests have been written for you (above).
     #
-    ####################################################################
+    ###########################################################################
     # IMPORTANT:
     #    **  For full credit you must appropriately
     #    **  use (call) the   is_prime   and   sum_of_digits
     #    **  functions that are DEFINED ABOVE.
-    ####################################################################
-    # ------------------------------------------------------------------
+    ###########################################################################
+    # -------------------------------------------------------------------------
     # DIFFICULTY AND TIME RATINGS (see top of this file for explanation)
     #    DIFFICULTY:      7
     #    TIME ESTIMATE:   15 to 20 minutes.
-    # ------------------------------------------------------------------
+    # -------------------------------------------------------------------------
 
 
 ###############################################################################

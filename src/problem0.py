@@ -7,8 +7,9 @@ These problems illustrate concepts that previous problems have not emphasized:
   -- is_prime (Problem 0b)
   -- animation (Problem 0c)
 
-Authors: David Mutchler, Vibha Alangar, Valerie Galluzzi, Mark Hays,
-         Amanda Stouder, their colleagues and PUT_YOUR_NAME_HERE.
+Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
+         Mark Hays, Amanda Stouder, Aaron Wilkin, their colleagues,
+         and PUT_YOUR_NAME_HERE.
 """  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 import rosegraphics as rg
@@ -23,7 +24,7 @@ def main():
     run_test_problem0c()
 
 
-########################################################################
+###############################################################################
 # TODO: 2.  READ the green doc-string for the:
 #   - is_prime
 #   - sum_of_digits
@@ -31,7 +32,7 @@ def main():
 # implementations, just their specification (per the doc-string).
 # You should  ** CALL **  those functions as needed in implementing the
 # other functions.  After you have READ this, change its _TODO_ to DONE.
-########################################################################
+###############################################################################
 
 def is_prime(n):
     """
@@ -51,13 +52,13 @@ def is_prime(n):
             return False
 
     return True
-    # ------------------------------------------------------------------
+    # -------------------------------------------------------------------------
     # Students:
-    #   Do NOT touch the above  is_prime  function - it has no TO DO.
+    #   Do NOT touch the above  is_prime  function - it has no _TODO_.
     #   Do NOT copy code from this function.
     #
     # Instead, ** CALL ** this function as needed in the problems below.
-    # ------------------------------------------------------------------
+    # -------------------------------------------------------------------------
 
 
 def sum_of_digits(number):
@@ -69,13 +70,13 @@ def sum_of_digits(number):
       If the integer is 83135,
       this function returns (8 + 3 + 1 + 3 + 5), which is 20.
     """
-    # ------------------------------------------------------------------
+    # -------------------------------------------------------------------------
     # Students:
-    #   Do NOT touch the above  sum_of_digits function - it has no TO DO.
+    #   Do NOT touch the above  sum_of_digits function - it has no _TODO_.
     #   Do NOT copy code from this function.
     #
     # Instead, ** CALL ** this function as needed in the problems below.
-    # ------------------------------------------------------------------
+    # -------------------------------------------------------------------------
     if number < 0:
         number = -number
 
@@ -187,16 +188,16 @@ def problem0a(n):
       -- If the given integer is 246, this function returns False,
            since (2 + 4 + 6) is 12, which is NOT odd.
     """
-    # ------------------------------------------------------------------
+    # -------------------------------------------------------------------------
     # TODO: 3. Implement and test this function.
     #          Tests have been written for you (above).
     #
-    ####################################################################
+    ###########################################################################
     # IMPORTANT:
     #    **  For full credit you must appropriately
     #    **  use (call) the   sum_of_digits   function
     #    **  that is DEFINED ABOVE.
-    ####################################################################
+    ###########################################################################
     #
     # HINT:  To test whether a number  m   is even or odd,
     #        compute m % 2, i.e., the REMAINDER from m // 2.
@@ -260,15 +261,15 @@ def problem0b(n):
       -- If n is 200, the correct answer is 46,
            since there are 46 primes between 2 and 200.
      """
-    # ------------------------------------------------------------------
+    # -------------------------------------------------------------------------
     # TODO: 4. Implement and test this function.
     #          Tests have been written for you (above).
     #
-    ####################################################################
+    ###########################################################################
     # IMPORTANT:
     #    **  For full credit you must appropriately
     #    **  use (call) the   is_prime   function that is DEFINED ABOVE.
-    ####################################################################
+    ###########################################################################
     # ------------------------------------------------------------------
 
 
@@ -328,15 +329,15 @@ def problem0c(circle, n, window):
       :type n: int
       :type window: rg.RoseWindow
     """
-    # ------------------------------------------------------------------
+    # -------------------------------------------------------------------------
     # TODO: 5. Implement and test this function.
     #          Tests have been written for you (above).
     #
-    ####################################################################
+    ###########################################################################
     # HINT:   render(0.5)
     #   renders with a half-second pause after rendering.
-    ####################################################################
-    # ------------------------------------------------------------------
+    ###########################################################################
+    # -------------------------------------------------------------------------
 
 
 ###############################################################################
