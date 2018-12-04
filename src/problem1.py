@@ -125,7 +125,8 @@ def run_test_problem1a():
 
     # Test 1:
     expected = -1.601  # This is APPROXIMATELY the correct answer.
-    print_expected_result_of_test([3, 5], expected, test_results, format_string)
+    print_expected_result_of_test([3, 5], expected, test_results,
+                                  format_string)
     actual = problem1a(3, 5)
     print_actual_result_of_test(expected, actual, test_results, precision=3)
 
@@ -135,6 +136,8 @@ def run_test_problem1a():
                                   format_string)
     actual = problem1a(30, 100)
     print_actual_result_of_test(expected, actual, test_results, precision=3)
+
+    print_summary_of_test_results(test_results)
 
     # -------------------------------------------------------------------------
     # TO DO: 2 (continued).
@@ -251,7 +254,6 @@ def run_test_problem1c():
     actual = problem1c(11)
     print_actual_result_of_test(expected, actual, test_results)
 
-
     # Test 3:
     expected = 33
     print_expected_result_of_test([25], expected, test_results, format_string)
@@ -272,13 +274,15 @@ def run_test_problem1c():
 
     # Test 6:
     expected = 19416
-    print_expected_result_of_test([10007], expected, test_results, format_string)
+    print_expected_result_of_test([10007], expected, test_results,
+                                  format_string)
     actual = problem1c(10007)
     print_actual_result_of_test(expected, actual, test_results)
 
     # Test 7:
     expected = 19416
-    print_expected_result_of_test([10008], expected, test_results, format_string)
+    print_expected_result_of_test([10008], expected, test_results,
+                                  format_string)
     actual = problem1c(10008)
     print_actual_result_of_test(expected, actual, test_results)
 
@@ -334,14 +338,13 @@ def problem1c(n):
 def print_expected_result_of_test(arguments, expected,
                                   test_results, format_string):
     testing_helper.print_expected_result_of_test(arguments, expected,
-                                                 test_results,
-                                                 format_string)
+                                                 test_results, format_string)
 
 
-def print_actual_result_of_test(expected, actual, test_results, precision=None):
+def print_actual_result_of_test(expected, actual, test_results,
+                                precision=None):
     testing_helper.print_actual_result_of_test(expected, actual,
-                                               test_results,
-                                               precision)
+                                               test_results, precision)
 
 
 def print_summary_of_test_results(test_results):
@@ -358,7 +361,6 @@ if USE_COLORING:
 else:
     # noinspection PyShadowingBuiltins
     print = testing_helper.print_uncolored
-
 
 # -----------------------------------------------------------------------------
 # Calls  main  to start the ball rolling.

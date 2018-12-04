@@ -115,7 +115,7 @@ def run_test_problem0a():
     # Test 2:
     expected = True
     print_expected_result_of_test([306], expected, test_results, format_string)
-    actual = problem0a(306)
+    actual = problem0a(306)  # Run the code to test
     print_actual_result_of_test(expected, actual, test_results)
     if actual == 'True':
         print('Your function returned the STRING "True",')
@@ -126,48 +126,48 @@ def run_test_problem0a():
     # Test 3:
     expected = False
     print_expected_result_of_test([246], expected, test_results, format_string)
-    actual = problem0a(246)
+    actual = problem0a(246)  # Run the code to test
     print_actual_result_of_test(expected, actual, test_results)
 
     # Test 4:
     expected = False
     print_expected_result_of_test([830931], expected, test_results,
                                   format_string)
-    actual = problem0a(830931)
+    actual = problem0a(830931)  # Run the code to test
     print_actual_result_of_test(expected, actual, test_results)
 
     # Test 5:
     expected = True
     print_expected_result_of_test([730931], expected, test_results,
                                   format_string)
-    actual = problem0a(730931)
+    actual = problem0a(730931)  # Run the code to test
     print_actual_result_of_test(expected, actual, test_results)
 
     # Test 6:
     expected = False
     print_expected_result_of_test([200], expected, test_results, format_string)
-    actual = problem0a(200)
+    actual = problem0a(200)  # Run the code to test
     print_actual_result_of_test(expected, actual, test_results)
 
     # Test 7:
     expected = True
     print_expected_result_of_test([562], expected, test_results,
                                   format_string)
-    actual = problem0a(562)
+    actual = problem0a(562)  # Run the code to test
     print_actual_result_of_test(expected, actual, test_results)
 
     # Test 8:
     expected = True
     print_expected_result_of_test([555], expected, test_results,
                                   format_string)
-    actual = problem0a(555)
+    actual = problem0a(555)  # Run the code to test
     print_actual_result_of_test(expected, actual, test_results)
 
     # Test 9:
     expected = False
     print_expected_result_of_test([13], expected, test_results,
                                   format_string)
-    actual = problem0a(13)
+    actual = problem0a(13)  # Run the code to test
     print_actual_result_of_test(expected, actual, test_results)
 
     print_summary_of_test_results(test_results)
@@ -205,7 +205,7 @@ def problem0a(n):
     #        If that remainder is 1, the number is odd.
     #        Simply try a few examples to convince yourself of this.
     #        ASK FOR HELP if you do not understand this hint.
-    # ------------------------------------------------------------------
+    # -------------------------------------------------------------------------
 
 
 def run_test_problem0b():
@@ -221,25 +221,25 @@ def run_test_problem0b():
     # Test 1:
     expected = 6
     print_expected_result_of_test([13], expected, test_results, format_string)
-    actual = problem0b(13)
+    actual = problem0b(13)  # Run the code to test
     print_actual_result_of_test(expected, actual, test_results)
 
     # Test 2:
     expected = 1
     print_expected_result_of_test([2], expected, test_results, format_string)
-    actual = problem0b(2)
+    actual = problem0b(2)  # Run the code to test
     print_actual_result_of_test(expected, actual, test_results)
 
     # Test 3:
     expected = 46
     print_expected_result_of_test([200], expected, test_results, format_string)
-    actual = problem0b(200)
+    actual = problem0b(200)  # Run the code to test
     print_actual_result_of_test(expected, actual, test_results)
 
     # Test 4:
     expected = 168
     print_expected_result_of_test([997], expected, test_results, format_string)
-    actual = problem0b(997)
+    actual = problem0b(997)  # Run the code to test
     print_actual_result_of_test(expected, actual, test_results)
 
     print_summary_of_test_results(test_results)
@@ -348,13 +348,13 @@ def problem0c(circle, n, window):
 def print_expected_result_of_test(arguments, expected,
                                   test_results, format_string):
     testing_helper.print_expected_result_of_test(arguments, expected,
-                                                 test_results,
-                                                 format_string)
+                                                 test_results, format_string)
 
 
-def print_actual_result_of_test(expected, actual, test_results):
+def print_actual_result_of_test(expected, actual, test_results,
+                                precision=None):
     testing_helper.print_actual_result_of_test(expected, actual,
-                                               test_results)
+                                               test_results, precision)
 
 
 def print_summary_of_test_results(test_results):
